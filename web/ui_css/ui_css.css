@@ -1,0 +1,207 @@
+@keyframes enterance{
+    from{
+        transform:translateX(100px) translateY(100px);
+    }
+    to{
+        transform:translateX(0px) translateY(0px);        
+    }
+}
+
+@keyframes jump{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform:translateX(0px);    
+    }
+}
+.jump{
+    animation-name: jump!important;
+    animation-duration: 1s;    
+}
+.animateIt{
+    animation-name: enterance!important;
+    animation-duration: 1s;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+body{
+    overflow-x: hidden;
+} 
+
+.display-4{
+    font-size: 35px;
+}
+
+/*checkbox custom css*/
+
+/* The container */
+.content {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.content input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.content:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.content input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.content input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.content .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*\checkbox custom css*/
+
+/*------------------------------*/
+
+/*radio custom css*/
+/* Customize the label (the container) */
+.radioContent {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radioContent input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.radioCheckmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #cccccc;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radioContent:hover input ~ .radioCheckmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radioContent input:checked ~ .radioCheckmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radioCheckmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radioContent input:checked ~ .radioCheckmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radioContent .radioCheckmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/*\radio custom css*/
+
+button:focus{
+    outline: 0;
+}
+
+.ques-btn{
+    transition-property: all;
+    transition-duration: 1s;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border: 20px solid #f00;
+    margin: 10px;    
+}
+
+.ques-btn:focus{
+    background: black;
+    color:white;
+    transform: scale(0.75);
+}
+
+/*for error*/
+.danger{
+    color:#ff4444!important;
+    transition-property: background!important;
+    transition-duration: 1s!important;
+}
